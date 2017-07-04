@@ -12,8 +12,8 @@ Method | HTTP request | Description
 [**CreatePoint**](DataServerApi.md#createpoint) | **POST** /dataservers/{webId}/points | Create a point in the specified Data Server.
 
 
-# **ListWithHttpInfo**
-> ListWithHttpInfo(string selectedFields = null)
+# **List**
+> List(string selectedFields = null)
 
 Retrieve a list of Data Servers known to this service.
 
@@ -26,12 +26,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsDataServer>
+[**PIItemsDataServer**](../Model/PIItemsDataServer.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetByNameWithHttpInfo**
-> GetByNameWithHttpInfo(string name, string selectedFields = null)
+# **GetByName**
+> GetByName(string name, string selectedFields = null)
 
 Retrieve a Data Server by name.
 
@@ -45,12 +45,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIDataServer>
+[**PIDataServer**](../Model/PIDataServer.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve a Data Server by path.
 
@@ -64,12 +64,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIDataServer>
+[**PIDataServer**](../Model/PIDataServer.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve a Data Server.
 
@@ -83,12 +83,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIDataServer>
+[**PIDataServer**](../Model/PIDataServer.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetEnumerationSetsWithHttpInfo**
-> GetEnumerationSetsWithHttpInfo(string webId, string selectedFields = null)
+# **GetEnumerationSets**
+> GetEnumerationSets(string webId, string selectedFields = null)
 
 Retrieve enumeration sets for given Data Server.
 
@@ -102,12 +102,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsEnumerationSet>
+[**PIItemsEnumerationSet**](../Model/PIItemsEnumerationSet.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateEnumerationSetWithHttpInfo**
-> CreateEnumerationSetWithHttpInfo(string webId, PIEnumerationSet enumerationSet)
+# **CreateEnumerationSet**
+> CreateEnumerationSet(string webId, PIEnumerationSet enumerationSet)
 
 Create an enumeration set on the Data Server.
 
@@ -121,12 +121,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetPointsWithHttpInfo**
-> GetPointsWithHttpInfo(string webId, int? maxCount = null, string nameFilter = null, string selectedFields = null, int? startIndex = null)
+# **GetPoints**
+> GetPoints(string webId, int? maxCount = null, string nameFilter = null, string selectedFields = null, int? startIndex = null)
 
 Retrieve a list of points on a specified Data Server.
 
@@ -143,12 +143,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsPoint>
+[**PIItemsPoint**](../Model/PIItemsPoint.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreatePointWithHttpInfo**
-> CreatePointWithHttpInfo(string webId, PIPoint pointDTO)
+# **CreatePoint**
+> CreatePoint(string webId, PIPoint pointDTO)
 
 Create a point in the specified Data Server.
 
@@ -162,6 +162,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

@@ -28,8 +28,8 @@ Method | HTTP request | Description
 [**UpdateValueAdHoc**](StreamSetApi.md#updatevalueadhoc) | **POST** /streamsets/value | Updates a single value for the specified streams.
 
 
-# **GetChannelWithHttpInfo**
-> GetChannelWithHttpInfo(string webId, string categoryName = null, bool? includeInitialValues = null, string nameFilter = null, bool? searchFullHierarchy = null, bool? showExcluded = null, bool? showHidden = null, string templateName = null)
+# **GetChannel**
+> GetChannel(string webId, string categoryName = null, bool? includeInitialValues = null, string nameFilter = null, bool? searchFullHierarchy = null, bool? showExcluded = null, bool? showHidden = null, string templateName = null)
 
 Opens a channel that will send messages about any value changes for the attributes of an Element, Event Frame, or Attribute.
 
@@ -49,12 +49,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValue>
+[**PIItemsStreamValue**](../Model/PIItemsStreamValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetEndWithHttpInfo**
-> GetEndWithHttpInfo(string webId, string categoryName = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string templateName = null)
+# **GetEnd**
+> GetEnd(string webId, string categoryName = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string templateName = null)
 
 Returns End of stream values of the attributes for an Element, Event Frame or Attribute
 
@@ -74,12 +74,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValue>
+[**PIItemsStreamValue**](../Model/PIItemsStreamValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetInterpolatedWithHttpInfo**
-> GetInterpolatedWithHttpInfo(string webId, string categoryName = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, string interval = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string startTime = null, string templateName = null, string timeZone = null)
+# **GetInterpolated**
+> GetInterpolated(string webId, string categoryName = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, string interval = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string startTime = null, string templateName = null, string timeZone = null)
 
 Returns interpolated values of attributes for an element, event frame or attribute over the specified time range at the specified sampling interval.
 
@@ -105,12 +105,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetInterpolatedAtTimesWithHttpInfo**
-> GetInterpolatedAtTimesWithHttpInfo(string webId, List<string> time, string categoryName = null, string filterExpression = null, bool? includeFilteredValues = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string sortOrder = null, string templateName = null, string timeZone = null)
+# **GetInterpolatedAtTimes**
+> GetInterpolatedAtTimes(string webId, List<string> time, string categoryName = null, string filterExpression = null, bool? includeFilteredValues = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string sortOrder = null, string templateName = null, string timeZone = null)
 
 Returns interpolated values of attributes for an element, event frame or attribute at the specified times.
 
@@ -135,12 +135,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetPlotWithHttpInfo**
-> GetPlotWithHttpInfo(string webId, string categoryName = null, string endTime = null, int? intervals = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string startTime = null, string templateName = null, string timeZone = null)
+# **GetPlot**
+> GetPlot(string webId, string categoryName = null, string endTime = null, int? intervals = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string startTime = null, string templateName = null, string timeZone = null)
 
 Returns values of attributes for an element, event frame or attribute over the specified time range suitable for plotting over the number of intervals (typically represents pixels).
 
@@ -164,12 +164,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetRecordedWithHttpInfo**
-> GetRecordedWithHttpInfo(string webId, string boundaryType = null, string categoryName = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string startTime = null, string templateName = null, string timeZone = null)
+# **GetRecorded**
+> GetRecorded(string webId, string boundaryType = null, string categoryName = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string startTime = null, string templateName = null, string timeZone = null)
 
 Returns recorded values of the attributes for an element, event frame, or attribute.
 
@@ -196,12 +196,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateValuesWithHttpInfo**
-> UpdateValuesWithHttpInfo(string webId, List<PIStreamValues> values, string bufferOption = null, string updateOption = null)
+# **UpdateValues**
+> UpdateValues(string webId, List<PIStreamValues> values, string bufferOption = null, string updateOption = null)
 
 Updates multiple values for the specified streams.
 
@@ -217,12 +217,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsItemsSubstatus>
+[**PIItemsItemsSubstatus**](../Model/PIItemsItemsSubstatus.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetRecordedAtTimeWithHttpInfo**
-> GetRecordedAtTimeWithHttpInfo(string webId, string time, string categoryName = null, string nameFilter = null, string retrievalMode = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string templateName = null, string timeZone = null)
+# **GetRecordedAtTime**
+> GetRecordedAtTime(string webId, string time, string categoryName = null, string nameFilter = null, string retrievalMode = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string templateName = null, string timeZone = null)
 
 Returns recorded values of the attributes for an element, event frame, or attribute.
 
@@ -245,12 +245,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetRecordedAtTimesWithHttpInfo**
-> GetRecordedAtTimesWithHttpInfo(string webId, List<string> time, string categoryName = null, string nameFilter = null, string retrievalMode = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string sortOrder = null, string templateName = null, string timeZone = null)
+# **GetRecordedAtTimes**
+> GetRecordedAtTimes(string webId, List<string> time, string categoryName = null, string nameFilter = null, string retrievalMode = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string sortOrder = null, string templateName = null, string timeZone = null)
 
 Returns recorded values of attributes for an element, event frame or attribute at the specified times.
 
@@ -274,12 +274,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSummariesWithHttpInfo**
-> GetSummariesWithHttpInfo(string webId, string calculationBasis = null, string categoryName = null, string endTime = null, string filterExpression = null, string nameFilter = null, string sampleInterval = null, string sampleType = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string startTime = null, string summaryDuration = null, List<string> summaryType = null, string templateName = null, string timeType = null, string timeZone = null)
+# **GetSummaries**
+> GetSummaries(string webId, string calculationBasis = null, string categoryName = null, string endTime = null, string filterExpression = null, string nameFilter = null, string sampleInterval = null, string sampleType = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string startTime = null, string summaryDuration = null, List<string> summaryType = null, string templateName = null, string timeType = null, string timeZone = null)
 
 Returns summary values of the attributes for an element, event frame or attribute.
 
@@ -309,12 +309,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamSummaries>
+[**PIItemsStreamSummaries**](../Model/PIItemsStreamSummaries.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetValuesWithHttpInfo**
-> GetValuesWithHttpInfo(string webId, string categoryName = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string templateName = null, string time = null, string timeZone = null)
+# **GetValues**
+> GetValues(string webId, string categoryName = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string templateName = null, string time = null, string timeZone = null)
 
 Returns values of the attributes for an Element, Event Frame or Attribute at the specified time.
 
@@ -336,12 +336,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValue>
+[**PIItemsStreamValue**](../Model/PIItemsStreamValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateValueWithHttpInfo**
-> UpdateValueWithHttpInfo(string webId, List<PIStreamValue> values, string bufferOption = null, string updateOption = null)
+# **UpdateValue**
+> UpdateValue(string webId, List<PIStreamValue> values, string bufferOption = null, string updateOption = null)
 
 Updates a single value for the specified streams.
 
@@ -357,12 +357,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSubstatus>
+[**PIItemsSubstatus**](../Model/PIItemsSubstatus.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetChannelAdHocWithHttpInfo**
-> GetChannelAdHocWithHttpInfo(List<string> webId, bool? includeInitialValues = null)
+# **GetChannelAdHoc**
+> GetChannelAdHoc(List<string> webId, bool? includeInitialValues = null)
 
 Opens a channel that will send messages about any value changes for the specified streams.
 
@@ -376,12 +376,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValue>
+[**PIItemsStreamValue**](../Model/PIItemsStreamValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetEndAdHocWithHttpInfo**
-> GetEndAdHocWithHttpInfo(List<string> webId, string selectedFields = null)
+# **GetEndAdHoc**
+> GetEndAdHoc(List<string> webId, string selectedFields = null)
 
 Returns End Of Stream values for attributes of the specified streams
 
@@ -395,12 +395,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetInterpolatedAdHocWithHttpInfo**
-> GetInterpolatedAdHocWithHttpInfo(List<string> webId, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, string interval = null, string selectedFields = null, string startTime = null, string timeZone = null)
+# **GetInterpolatedAdHoc**
+> GetInterpolatedAdHoc(List<string> webId, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, string interval = null, string selectedFields = null, string startTime = null, string timeZone = null)
 
 Returns interpolated values of the specified streams over the specified time range at the specified sampling interval.
 
@@ -420,12 +420,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetInterpolatedAtTimesAdHocWithHttpInfo**
-> GetInterpolatedAtTimesAdHocWithHttpInfo(List<string> time, List<string> webId, string filterExpression = null, bool? includeFilteredValues = null, string selectedFields = null, string sortOrder = null, string timeZone = null)
+# **GetInterpolatedAtTimesAdHoc**
+> GetInterpolatedAtTimesAdHoc(List<string> time, List<string> webId, string filterExpression = null, bool? includeFilteredValues = null, string selectedFields = null, string sortOrder = null, string timeZone = null)
 
 Returns interpolated values of the specified streams at the specified times.
 
@@ -444,12 +444,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetPlotAdHocWithHttpInfo**
-> GetPlotAdHocWithHttpInfo(List<string> webId, string endTime = null, int? intervals = null, string selectedFields = null, string startTime = null, string timeZone = null)
+# **GetPlotAdHoc**
+> GetPlotAdHoc(List<string> webId, string endTime = null, int? intervals = null, string selectedFields = null, string startTime = null, string timeZone = null)
 
 Returns values of attributes for the specified streams over the specified time range suitable for plotting over the number of intervals (typically represents pixels).
 
@@ -467,12 +467,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetRecordedAdHocWithHttpInfo**
-> GetRecordedAdHocWithHttpInfo(List<string> webId, string boundaryType = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, int? maxCount = null, string selectedFields = null, string startTime = null, string timeZone = null)
+# **GetRecordedAdHoc**
+> GetRecordedAdHoc(List<string> webId, string boundaryType = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, int? maxCount = null, string selectedFields = null, string startTime = null, string timeZone = null)
 
 Returns recorded values of the specified streams.
 
@@ -493,12 +493,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateValuesAdHocWithHttpInfo**
-> UpdateValuesAdHocWithHttpInfo(List<PIStreamValues> values, string bufferOption = null, string updateOption = null)
+# **UpdateValuesAdHoc**
+> UpdateValuesAdHoc(List<PIStreamValues> values, string bufferOption = null, string updateOption = null)
 
 Updates multiple values for the specified streams.
 
@@ -513,12 +513,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsItemsSubstatus>
+[**PIItemsItemsSubstatus**](../Model/PIItemsItemsSubstatus.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetRecordedAtTimeAdHocWithHttpInfo**
-> GetRecordedAtTimeAdHocWithHttpInfo(string time, List<string> webId, string retrievalMode = null, string selectedFields = null, string timeZone = null)
+# **GetRecordedAtTimeAdHoc**
+> GetRecordedAtTimeAdHoc(string time, List<string> webId, string retrievalMode = null, string selectedFields = null, string timeZone = null)
 
 Returns recorded values based on the passed time and retrieval mode.
 
@@ -535,12 +535,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValue>
+[**PIItemsStreamValue**](../Model/PIItemsStreamValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetRecordedAtTimesAdHocWithHttpInfo**
-> GetRecordedAtTimesAdHocWithHttpInfo(List<string> time, List<string> webId, string retrievalMode = null, string selectedFields = null, string sortOrder = null, string timeZone = null)
+# **GetRecordedAtTimesAdHoc**
+> GetRecordedAtTimesAdHoc(List<string> time, List<string> webId, string retrievalMode = null, string selectedFields = null, string sortOrder = null, string timeZone = null)
 
 Returns recorded values of the specified streams at the specified times.
 
@@ -558,12 +558,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSummariesAdHocWithHttpInfo**
-> GetSummariesAdHocWithHttpInfo(List<string> webId, string calculationBasis = null, string endTime = null, string filterExpression = null, string sampleInterval = null, string sampleType = null, string selectedFields = null, string startTime = null, string summaryDuration = null, List<string> summaryType = null, string timeType = null, string timeZone = null)
+# **GetSummariesAdHoc**
+> GetSummariesAdHoc(List<string> webId, string calculationBasis = null, string endTime = null, string filterExpression = null, string sampleInterval = null, string sampleType = null, string selectedFields = null, string startTime = null, string summaryDuration = null, List<string> summaryType = null, string timeType = null, string timeZone = null)
 
 Returns summary values of the specified streams.
 
@@ -587,12 +587,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamSummaries>
+[**PIItemsStreamSummaries**](../Model/PIItemsStreamSummaries.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetValuesAdHocWithHttpInfo**
-> GetValuesAdHocWithHttpInfo(List<string> webId, string selectedFields = null, string time = null, string timeZone = null)
+# **GetValuesAdHoc**
+> GetValuesAdHoc(List<string> webId, string selectedFields = null, string time = null, string timeZone = null)
 
 Returns values of the specified streams.
 
@@ -608,12 +608,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValue>
+[**PIItemsStreamValue**](../Model/PIItemsStreamValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateValueAdHocWithHttpInfo**
-> UpdateValueAdHocWithHttpInfo(List<PIStreamValue> values, string bufferOption = null, string updateOption = null)
+# **UpdateValueAdHoc**
+> UpdateValueAdHoc(List<PIStreamValue> values, string bufferOption = null, string updateOption = null)
 
 Updates a single value for the specified streams.
 
@@ -628,6 +628,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSubstatus>
+[**PIItemsSubstatus**](../Model/PIItemsSubstatus.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

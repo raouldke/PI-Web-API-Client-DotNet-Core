@@ -12,8 +12,8 @@ Method | HTTP request | Description
 [**GetSecurityMappings**](SecurityIdentityApi.md#getsecuritymappings) | **GET** /securityidentities/{webId}/securitymappings | Get security mappings for the specified security identity.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve a security identity by path.
 
@@ -27,12 +27,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISecurityIdentity>
+[**PISecurityIdentity**](../Model/PISecurityIdentity.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve a security identity.
 
@@ -46,12 +46,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISecurityIdentity>
+[**PISecurityIdentity**](../Model/PISecurityIdentity.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PISecurityIdentity securityIdentity)
+# **Update**
+> Update(string webId, PISecurityIdentity securityIdentity)
 
 Update a security identity by replacing items in its definition.
 
@@ -65,12 +65,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete a security identity.
 
@@ -83,12 +83,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityWithHttpInfo**
-> GetSecurityWithHttpInfo(string webId, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
+# **GetSecurity**
+> GetSecurity(string webId, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
 
 Get the security information of the specified security item associated with the security identity for a specified user.
 
@@ -104,12 +104,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityRights>
+[**PIItemsSecurityRights**](../Model/PIItemsSecurityRights.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntriesWithHttpInfo**
-> GetSecurityEntriesWithHttpInfo(string webId, string nameFilter = null, string selectedFields = null)
+# **GetSecurityEntries**
+> GetSecurityEntries(string webId, string nameFilter = null, string selectedFields = null)
 
 Retrieve the security entries associated with the security identity based on the specified criteria. By default, all security entries for this security identity are returned.
 
@@ -124,12 +124,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityEntry>
+[**PIItemsSecurityEntry**](../Model/PIItemsSecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntryByNameWithHttpInfo**
-> GetSecurityEntryByNameWithHttpInfo(string name, string webId, string selectedFields = null)
+# **GetSecurityEntryByName**
+> GetSecurityEntryByName(string name, string webId, string selectedFields = null)
 
 Retrieve the security entry associated with the security identity with the specified name.
 
@@ -144,12 +144,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISecurityEntry>
+[**PISecurityEntry**](../Model/PISecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityMappingsWithHttpInfo**
-> GetSecurityMappingsWithHttpInfo(string webId, string selectedFields = null)
+# **GetSecurityMappings**
+> GetSecurityMappings(string webId, string selectedFields = null)
 
 Get security mappings for the specified security identity.
 
@@ -163,6 +163,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityMapping>
+[**PIItemsSecurityMapping**](../Model/PIItemsSecurityMapping.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

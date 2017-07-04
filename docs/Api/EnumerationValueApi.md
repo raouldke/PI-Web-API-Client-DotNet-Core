@@ -8,8 +8,8 @@ Method | HTTP request | Description
 [**DeleteEnumerationValue**](EnumerationValueApi.md#deleteenumerationvalue) | **DELETE** /enumerationvalues/{webId} | Delete an enumeration value from an enumeration set.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve an enumeration value by path.
 
@@ -23,12 +23,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIEnumerationValue>
+[**PIEnumerationValue**](../Model/PIEnumerationValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve an enumeration value mapping
 
@@ -42,12 +42,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIEnumerationValue>
+[**PIEnumerationValue**](../Model/PIEnumerationValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateEnumerationValueWithHttpInfo**
-> UpdateEnumerationValueWithHttpInfo(string webId, PIEnumerationValue enumerationValue)
+# **UpdateEnumerationValue**
+> UpdateEnumerationValue(string webId, PIEnumerationValue enumerationValue)
 
 Update an enumeration value by replacing items in its definition.
 
@@ -61,12 +61,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteEnumerationValueWithHttpInfo**
-> DeleteEnumerationValueWithHttpInfo(string webId)
+# **DeleteEnumerationValue**
+> DeleteEnumerationValue(string webId)
 
 Delete an enumeration value from an enumeration set.
 
@@ -79,6 +79,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

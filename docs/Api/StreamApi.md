@@ -16,8 +16,8 @@ Method | HTTP request | Description
 [**UpdateValue**](StreamApi.md#updatevalue) | **POST** /streams/{webId}/value | Updates a value for the specified stream.
 
 
-# **GetChannelWithHttpInfo**
-> GetChannelWithHttpInfo(string webId, bool? includeInitialValues = null)
+# **GetChannel**
+> GetChannel(string webId, bool? includeInitialValues = null)
 
 Opens a channel that will send messages about any value changes for the specified stream.
 
@@ -31,12 +31,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsStreamValues>
+[**PIItemsStreamValues**](../Model/PIItemsStreamValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetEndWithHttpInfo**
-> GetEndWithHttpInfo(string webId, string desiredUnits = null, string selectedFields = null)
+# **GetEnd**
+> GetEnd(string webId, string desiredUnits = null, string selectedFields = null)
 
 Returns the end-of-stream value of the stream.
 
@@ -51,12 +51,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValue>
+[**PITimedValue**](../Model/PITimedValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetInterpolatedWithHttpInfo**
-> GetInterpolatedWithHttpInfo(string webId, string desiredUnits = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, string interval = null, string selectedFields = null, string startTime = null, string timeZone = null)
+# **GetInterpolated**
+> GetInterpolated(string webId, string desiredUnits = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, string interval = null, string selectedFields = null, string startTime = null, string timeZone = null)
 
 Retrieves interpolated values over the specified time range at the specified sampling interval.
 
@@ -77,12 +77,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValues>
+[**PITimedValues**](../Model/PITimedValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetInterpolatedAtTimesWithHttpInfo**
-> GetInterpolatedAtTimesWithHttpInfo(string webId, string desiredUnits = null, string filterExpression = null, bool? includeFilteredValues = null, string selectedFields = null, string sortOrder = null, List<string> time = null, string timeZone = null)
+# **GetInterpolatedAtTimes**
+> GetInterpolatedAtTimes(string webId, string desiredUnits = null, string filterExpression = null, bool? includeFilteredValues = null, string selectedFields = null, string sortOrder = null, List<string> time = null, string timeZone = null)
 
 Retrieves interpolated values over the specified time range at the specified sampling interval.
 
@@ -102,12 +102,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValues>
+[**PITimedValues**](../Model/PITimedValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetPlotWithHttpInfo**
-> GetPlotWithHttpInfo(string webId, string desiredUnits = null, string endTime = null, int? intervals = null, string selectedFields = null, string startTime = null, string timeZone = null)
+# **GetPlot**
+> GetPlot(string webId, string desiredUnits = null, string endTime = null, int? intervals = null, string selectedFields = null, string startTime = null, string timeZone = null)
 
 Retrieves values over the specified time range suitable for plotting over the number of intervals (typically represents pixels).
 
@@ -126,12 +126,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValues>
+[**PITimedValues**](../Model/PITimedValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetRecordedWithHttpInfo**
-> GetRecordedWithHttpInfo(string webId, string boundaryType = null, string desiredUnits = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, int? maxCount = null, string selectedFields = null, string startTime = null, string timeZone = null)
+# **GetRecorded**
+> GetRecorded(string webId, string boundaryType = null, string desiredUnits = null, string endTime = null, string filterExpression = null, bool? includeFilteredValues = null, int? maxCount = null, string selectedFields = null, string startTime = null, string timeZone = null)
 
 Returns a list of compressed values for the requested time range from the source provider.
 
@@ -153,12 +153,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValues>
+[**PITimedValues**](../Model/PITimedValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateValuesWithHttpInfo**
-> UpdateValuesWithHttpInfo(string webId, List<PITimedValue> values, string bufferOption = null, string updateOption = null)
+# **UpdateValues**
+> UpdateValues(string webId, List<PITimedValue> values, string bufferOption = null, string updateOption = null)
 
 Updates multiple values for the specified stream.
 
@@ -174,12 +174,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSubstatus>
+[**PIItemsSubstatus**](../Model/PIItemsSubstatus.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetRecordedAtTimeWithHttpInfo**
-> GetRecordedAtTimeWithHttpInfo(string webId, string time, string desiredUnits = null, string retrievalMode = null, string selectedFields = null, string timeZone = null)
+# **GetRecordedAtTime**
+> GetRecordedAtTime(string webId, string time, string desiredUnits = null, string retrievalMode = null, string selectedFields = null, string timeZone = null)
 
 Returns a single recorded value based on the passed time and retrieval mode from the stream.
 
@@ -197,12 +197,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValue>
+[**PITimedValue**](../Model/PITimedValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetRecordedAtTimesWithHttpInfo**
-> GetRecordedAtTimesWithHttpInfo(string webId, string desiredUnits = null, string retrievalMode = null, string selectedFields = null, string sortOrder = null, List<string> time = null, string timeZone = null)
+# **GetRecordedAtTimes**
+> GetRecordedAtTimes(string webId, string desiredUnits = null, string retrievalMode = null, string selectedFields = null, string sortOrder = null, List<string> time = null, string timeZone = null)
 
 Retrieves recorded values at the specified times.
 
@@ -221,12 +221,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValues>
+[**PITimedValues**](../Model/PITimedValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSummaryWithHttpInfo**
-> GetSummaryWithHttpInfo(string webId, string calculationBasis = null, string endTime = null, string filterExpression = null, string sampleInterval = null, string sampleType = null, string selectedFields = null, string startTime = null, string summaryDuration = null, List<string> summaryType = null, string timeType = null, string timeZone = null)
+# **GetSummary**
+> GetSummary(string webId, string calculationBasis = null, string endTime = null, string filterExpression = null, string sampleInterval = null, string sampleType = null, string selectedFields = null, string startTime = null, string summaryDuration = null, List<string> summaryType = null, string timeType = null, string timeZone = null)
 
 Returns a summary over the specified time range for the stream.
 
@@ -250,12 +250,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSummaryValue>
+[**PIItemsSummaryValue**](../Model/PIItemsSummaryValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetValueWithHttpInfo**
-> GetValueWithHttpInfo(string webId, string desiredUnits = null, string selectedFields = null, string time = null, string timeZone = null)
+# **GetValue**
+> GetValue(string webId, string desiredUnits = null, string selectedFields = null, string time = null, string timeZone = null)
 
 Returns the value of the stream at the specified time. By default, this is usually the current value.
 
@@ -272,12 +272,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValue>
+[**PITimedValue**](../Model/PITimedValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateValueWithHttpInfo**
-> UpdateValueWithHttpInfo(string webId, PITimedValue value, string bufferOption = null, string updateOption = null)
+# **UpdateValue**
+> UpdateValue(string webId, PITimedValue value, string bufferOption = null, string updateOption = null)
 
 Updates a value for the specified stream.
 
@@ -293,6 +293,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

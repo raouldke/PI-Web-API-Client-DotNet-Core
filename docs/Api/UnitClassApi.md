@@ -11,8 +11,8 @@ Method | HTTP request | Description
 [**CreateUnit**](UnitClassApi.md#createunit) | **POST** /unitclasses/{webId}/units | Create a unit in the specified Unit Class.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve a unit class by path.
 
@@ -26,12 +26,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIUnitClass>
+[**PIUnitClass**](../Model/PIUnitClass.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve a unit class.
 
@@ -45,12 +45,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIUnitClass>
+[**PIUnitClass**](../Model/PIUnitClass.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PIUnitClass unitClassDTO)
+# **Update**
+> Update(string webId, PIUnitClass unitClassDTO)
 
 Update a unit class.
 
@@ -64,12 +64,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete a unit class.
 
@@ -82,12 +82,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetCanonicalUnitWithHttpInfo**
-> GetCanonicalUnitWithHttpInfo(string webId, string selectedFields = null)
+# **GetCanonicalUnit**
+> GetCanonicalUnit(string webId, string selectedFields = null)
 
 Get the canonical unit of a unit class.
 
@@ -101,12 +101,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIUnit>
+[**PIUnit**](../Model/PIUnit.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetUnitsWithHttpInfo**
-> GetUnitsWithHttpInfo(string webId, string selectedFields = null)
+# **GetUnits**
+> GetUnits(string webId, string selectedFields = null)
 
 Get a list of all units belonging to the unit class.
 
@@ -120,12 +120,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIUnit>
+[**PIUnit**](../Model/PIUnit.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateUnitWithHttpInfo**
-> CreateUnitWithHttpInfo(string webId, PIUnit unitDTO)
+# **CreateUnit**
+> CreateUnit(string webId, PIUnit unitDTO)
 
 Create a unit in the specified Unit Class.
 
@@ -139,6 +139,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

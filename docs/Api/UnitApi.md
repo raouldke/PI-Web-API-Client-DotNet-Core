@@ -8,8 +8,8 @@ Method | HTTP request | Description
 [**Delete**](UnitApi.md#delete) | **DELETE** /units/{webId} | Delete a unit.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve a unit by path.
 
@@ -23,12 +23,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIUnit>
+[**PIUnit**](../Model/PIUnit.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve a unit.
 
@@ -42,12 +42,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIUnit>
+[**PIUnit**](../Model/PIUnit.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PIUnit unitDTO)
+# **Update**
+> Update(string webId, PIUnit unitDTO)
 
 Update a unit.
 
@@ -61,12 +61,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete a unit.
 
@@ -79,6 +79,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

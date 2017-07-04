@@ -8,8 +8,8 @@ Method | HTTP request | Description
 [**GetAtTimes**](CalculationApi.md#getattimes) | **GET** /calculation/times | Returns the result of evaluating the expression at the specified timestamps.
 
 
-# **GetAtIntervalsWithHttpInfo**
-> GetAtIntervalsWithHttpInfo(string endTime = null, string expression = null, string sampleInterval = null, string selectedFields = null, string startTime = null, string webId = null)
+# **GetAtIntervals**
+> GetAtIntervals(string endTime = null, string expression = null, string sampleInterval = null, string selectedFields = null, string startTime = null, string webId = null)
 
 Returns results of evaluating the expression over the time range from the start time to the end time at a defined interval.
 
@@ -27,12 +27,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValues>
+[**PITimedValues**](../Model/PITimedValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAtRecordedWithHttpInfo**
-> GetAtRecordedWithHttpInfo(string endTime = null, string expression = null, string selectedFields = null, string startTime = null, string webId = null)
+# **GetAtRecorded**
+> GetAtRecorded(string endTime = null, string expression = null, string selectedFields = null, string startTime = null, string webId = null)
 
 Returns the result of evaluating the expression at each point in time over the time range from the start time to the end time where a recorded value exists for a member of the expression.
 
@@ -49,12 +49,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValues>
+[**PITimedValues**](../Model/PITimedValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSummaryWithHttpInfo**
-> GetSummaryWithHttpInfo(string calculationBasis = null, string endTime = null, string expression = null, string sampleInterval = null, string sampleType = null, string selectedFields = null, string startTime = null, string summaryDuration = null, List<string> summaryType = null, string timeType = null, string webId = null)
+# **GetSummary**
+> GetSummary(string calculationBasis = null, string endTime = null, string expression = null, string sampleInterval = null, string sampleType = null, string selectedFields = null, string startTime = null, string summaryDuration = null, List<string> summaryType = null, string timeType = null, string webId = null)
 
 Returns the result of evaluating the expression over the time range from the start time to the end time. The time range is first divided into a number of summary intervals. Then the calculation is performed for the specified summaries over each interval.
 
@@ -77,12 +77,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSummaryValue>
+[**PIItemsSummaryValue**](../Model/PIItemsSummaryValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAtTimesWithHttpInfo**
-> GetAtTimesWithHttpInfo(string expression = null, string selectedFields = null, string sortOrder = null, List<string> time = null, string webId = null)
+# **GetAtTimes**
+> GetAtTimes(string expression = null, string selectedFields = null, string sortOrder = null, List<string> time = null, string webId = null)
 
 Returns the result of evaluating the expression at the specified timestamps.
 
@@ -99,6 +99,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValues>
+[**PITimedValues**](../Model/PITimedValues.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

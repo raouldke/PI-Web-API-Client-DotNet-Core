@@ -6,8 +6,8 @@ Method | HTTP request | Description
 [**Get**](AnalysisRulePlugInApi.md#get) | **GET** /analysisruleplugins/{webId} | Retrieve an Analysis Rule Plug-in.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve an Analysis Rule Plug-in by path.
 
@@ -21,12 +21,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAnalysisRulePlugIn>
+[**PIAnalysisRulePlugIn**](../Model/PIAnalysisRulePlugIn.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve an Analysis Rule Plug-in.
 
@@ -40,6 +40,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAnalysisRulePlugIn>
+[**PIAnalysisRulePlugIn**](../Model/PIAnalysisRulePlugIn.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

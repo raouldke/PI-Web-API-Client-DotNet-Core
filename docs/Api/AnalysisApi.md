@@ -15,8 +15,8 @@ Method | HTTP request | Description
 [**DeleteSecurityEntry**](AnalysisApi.md#deletesecurityentry) | **DELETE** /analyses/{webId}/securityentries/{name} | Delete a security entry owned by the analysis.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve an Analysis by path.
 
@@ -30,12 +30,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAnalysis>
+[**PIAnalysis**](../Model/PIAnalysis.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve an Analysis.
 
@@ -49,12 +49,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAnalysis>
+[**PIAnalysis**](../Model/PIAnalysis.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PIAnalysis analysis)
+# **Update**
+> Update(string webId, PIAnalysis analysis)
 
 Update an Analysis.
 
@@ -68,12 +68,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete an Analysis.
 
@@ -86,12 +86,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetCategoriesWithHttpInfo**
-> GetCategoriesWithHttpInfo(string webId, string selectedFields = null)
+# **GetCategories**
+> GetCategories(string webId, string selectedFields = null)
 
 Get an Analysis' categories.
 
@@ -105,12 +105,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAnalysisCategory>
+[**PIItemsAnalysisCategory**](../Model/PIItemsAnalysisCategory.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityWithHttpInfo**
-> GetSecurityWithHttpInfo(string webId, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
+# **GetSecurity**
+> GetSecurity(string webId, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
 
 Get the security information of the specified security item associated with the Analysis for a specified user.
 
@@ -126,12 +126,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityRights>
+[**PIItemsSecurityRights**](../Model/PIItemsSecurityRights.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntriesWithHttpInfo**
-> GetSecurityEntriesWithHttpInfo(string webId, string nameFilter = null, string selectedFields = null)
+# **GetSecurityEntries**
+> GetSecurityEntries(string webId, string nameFilter = null, string selectedFields = null)
 
 Retrieve the security entries associated with the analysis based on the specified criteria. By default, all security entries for this analysis are returned.
 
@@ -146,12 +146,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityEntry>
+[**PIItemsSecurityEntry**](../Model/PIItemsSecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateSecurityEntryWithHttpInfo**
-> CreateSecurityEntryWithHttpInfo(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
+# **CreateSecurityEntry**
+> CreateSecurityEntry(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
 
 Create a security entry owned by the analysis.
 
@@ -166,12 +166,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntryByNameWithHttpInfo**
-> GetSecurityEntryByNameWithHttpInfo(string name, string webId, string selectedFields = null)
+# **GetSecurityEntryByName**
+> GetSecurityEntryByName(string name, string webId, string selectedFields = null)
 
 Retrieve the security entry associated with the analysis with the specified name.
 
@@ -186,12 +186,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISecurityEntry>
+[**PISecurityEntry**](../Model/PISecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateSecurityEntryWithHttpInfo**
-> UpdateSecurityEntryWithHttpInfo(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
+# **UpdateSecurityEntry**
+> UpdateSecurityEntry(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
 
 Update a security entry owned by the analysis.
 
@@ -207,12 +207,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteSecurityEntryWithHttpInfo**
-> DeleteSecurityEntryWithHttpInfo(string name, string webId, bool? applyToChildren = null)
+# **DeleteSecurityEntry**
+> DeleteSecurityEntry(string name, string webId, bool? applyToChildren = null)
 
 Delete a security entry owned by the analysis.
 
@@ -227,6 +227,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

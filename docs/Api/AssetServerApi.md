@@ -25,8 +25,8 @@ Method | HTTP request | Description
 [**CreateUnitClass**](AssetServerApi.md#createunitclass) | **POST** /assetservers/{webId}/unitclasses | Create a unit class in the specified Asset Server.
 
 
-# **ListWithHttpInfo**
-> ListWithHttpInfo(string selectedFields = null)
+# **List**
+> List(string selectedFields = null)
 
 Retrieve a list of all Asset Servers known to this service.
 
@@ -39,12 +39,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAssetServer>
+[**PIItemsAssetServer**](../Model/PIItemsAssetServer.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetByNameWithHttpInfo**
-> GetByNameWithHttpInfo(string name, string selectedFields = null)
+# **GetByName**
+> GetByName(string name, string selectedFields = null)
 
 Retrieve an Asset Server by name.
 
@@ -58,12 +58,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAssetServer>
+[**PIAssetServer**](../Model/PIAssetServer.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve an Asset Server by path.
 
@@ -77,12 +77,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAssetServer>
+[**PIAssetServer**](../Model/PIAssetServer.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve an Asset Server.
 
@@ -96,12 +96,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAssetServer>
+[**PIAssetServer**](../Model/PIAssetServer.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAnalysisRulePlugInsWithHttpInfo**
-> GetAnalysisRulePlugInsWithHttpInfo(string webId, string selectedFields = null)
+# **GetAnalysisRulePlugIns**
+> GetAnalysisRulePlugIns(string webId, string selectedFields = null)
 
 Retrieve a list of all Analysis Rule Plug-in's.
 
@@ -115,12 +115,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAnalysisRulePlugIn>
+[**PIItemsAnalysisRulePlugIn**](../Model/PIItemsAnalysisRulePlugIn.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetDatabasesWithHttpInfo**
-> GetDatabasesWithHttpInfo(string webId, string selectedFields = null)
+# **GetDatabases**
+> GetDatabases(string webId, string selectedFields = null)
 
 Retrieve a list of all Asset Databases on the specified Asset Server.
 
@@ -134,12 +134,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAssetDatabase>
+[**PIItemsAssetDatabase**](../Model/PIItemsAssetDatabase.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateAssetDatabaseWithHttpInfo**
-> CreateAssetDatabaseWithHttpInfo(string webId, PIAssetDatabase database)
+# **CreateAssetDatabase**
+> CreateAssetDatabase(string webId, PIAssetDatabase database)
 
 Create an asset database.
 
@@ -153,12 +153,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityWithHttpInfo**
-> GetSecurityWithHttpInfo(string webId, List<string> securityItem, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
+# **GetSecurity**
+> GetSecurity(string webId, List<string> securityItem, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
 
 Get the security information of the specified security item associated with the asset server for a specified user.
 
@@ -175,12 +175,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityRights>
+[**PIItemsSecurityRights**](../Model/PIItemsSecurityRights.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntriesWithHttpInfo**
-> GetSecurityEntriesWithHttpInfo(string webId, string nameFilter = null, string securityItem = null, string selectedFields = null)
+# **GetSecurityEntries**
+> GetSecurityEntries(string webId, string nameFilter = null, string securityItem = null, string selectedFields = null)
 
 Retrieve the security entries of the specified security item associated with the asset server based on the specified criteria. By default, all security entries for this asset server are returned.
 
@@ -196,12 +196,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityEntry>
+[**PIItemsSecurityEntry**](../Model/PIItemsSecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateSecurityEntryWithHttpInfo**
-> CreateSecurityEntryWithHttpInfo(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null, string securityItem = null)
+# **CreateSecurityEntry**
+> CreateSecurityEntry(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null, string securityItem = null)
 
 Create a security entry owned by the asset server.
 
@@ -217,12 +217,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntryByNameWithHttpInfo**
-> GetSecurityEntryByNameWithHttpInfo(string name, string webId, string securityItem = null, string selectedFields = null)
+# **GetSecurityEntryByName**
+> GetSecurityEntryByName(string name, string webId, string securityItem = null, string selectedFields = null)
 
 Retrieve the security entry of the specified security item associated with the asset server with the specified name.
 
@@ -238,12 +238,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISecurityEntry>
+[**PISecurityEntry**](../Model/PISecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateSecurityEntryWithHttpInfo**
-> UpdateSecurityEntryWithHttpInfo(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null, string securityItem = null)
+# **UpdateSecurityEntry**
+> UpdateSecurityEntry(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null, string securityItem = null)
 
 Update a security entry owned by the asset server.
 
@@ -260,12 +260,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteSecurityEntryWithHttpInfo**
-> DeleteSecurityEntryWithHttpInfo(string name, string webId, bool? applyToChildren = null, string securityItem = null)
+# **DeleteSecurityEntry**
+> DeleteSecurityEntry(string name, string webId, bool? applyToChildren = null, string securityItem = null)
 
 Delete a security entry owned by the asset server.
 
@@ -281,12 +281,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityIdentitiesWithHttpInfo**
-> GetSecurityIdentitiesWithHttpInfo(string webId, string field = null, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null)
+# **GetSecurityIdentities**
+> GetSecurityIdentities(string webId, string field = null, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null)
 
 Retrieve security identities based on the specified criteria. By default, all security identities in the specified Asset Server are returned.
 
@@ -305,12 +305,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityIdentity>
+[**PIItemsSecurityIdentity**](../Model/PIItemsSecurityIdentity.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateSecurityIdentityWithHttpInfo**
-> CreateSecurityIdentityWithHttpInfo(string webId, PISecurityIdentity securityIdentity)
+# **CreateSecurityIdentity**
+> CreateSecurityIdentity(string webId, PISecurityIdentity securityIdentity)
 
 Create a security identity.
 
@@ -324,12 +324,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityIdentitiesForUserWithHttpInfo**
-> GetSecurityIdentitiesForUserWithHttpInfo(string webId, string userIdentity, string selectedFields = null)
+# **GetSecurityIdentitiesForUser**
+> GetSecurityIdentitiesForUser(string webId, string userIdentity, string selectedFields = null)
 
 Retrieve security identities for a specific user.
 
@@ -344,12 +344,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityIdentity>
+[**PIItemsSecurityIdentity**](../Model/PIItemsSecurityIdentity.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityMappingsWithHttpInfo**
-> GetSecurityMappingsWithHttpInfo(string webId, string field = null, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null)
+# **GetSecurityMappings**
+> GetSecurityMappings(string webId, string field = null, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null)
 
 Retrieve security mappings based on the specified criteria. By default, all security mappings in the specified Asset Server are returned.
 
@@ -368,12 +368,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityMapping>
+[**PIItemsSecurityMapping**](../Model/PIItemsSecurityMapping.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateSecurityMappingWithHttpInfo**
-> CreateSecurityMappingWithHttpInfo(string webId, PISecurityMapping securityMapping)
+# **CreateSecurityMapping**
+> CreateSecurityMapping(string webId, PISecurityMapping securityMapping)
 
 Create a security mapping.
 
@@ -387,12 +387,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetTimeRulePlugInsWithHttpInfo**
-> GetTimeRulePlugInsWithHttpInfo(string webId, string selectedFields = null)
+# **GetTimeRulePlugIns**
+> GetTimeRulePlugIns(string webId, string selectedFields = null)
 
 Retrieve a list of all Time Rule Plug-in's.
 
@@ -406,12 +406,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsTimeRulePlugIn>
+[**PIItemsTimeRulePlugIn**](../Model/PIItemsTimeRulePlugIn.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetUnitClassesWithHttpInfo**
-> GetUnitClassesWithHttpInfo(string webId, string selectedFields = null)
+# **GetUnitClasses**
+> GetUnitClasses(string webId, string selectedFields = null)
 
 Retrieve a list of all unit classes on the specified Asset Server.
 
@@ -425,12 +425,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsUnitClass>
+[**PIItemsUnitClass**](../Model/PIItemsUnitClass.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateUnitClassWithHttpInfo**
-> CreateUnitClassWithHttpInfo(string webId, PIUnitClass unitClass)
+# **CreateUnitClass**
+> CreateUnitClass(string webId, PIUnitClass unitClass)
 
 Create a unit class in the specified Asset Server.
 
@@ -444,6 +444,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

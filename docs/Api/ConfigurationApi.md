@@ -8,8 +8,8 @@ Method | HTTP request | Description
 [**Put**](ConfigurationApi.md#put) | **PUT** /system/configuration/{key} | Create or update a configuration item.
 
 
-# **ListWithHttpInfo**
-> ListWithHttpInfo()
+# **List**
+> List()
 
 Get the current system configuration.
 
@@ -21,12 +21,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Dictionary<string, Object>>
+Dictionary<string, Object>
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string key)
+# **Get**
+> Get(string key)
 
 Get the value of a configuration item.
 
@@ -39,12 +39,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string key)
+# **Delete**
+> Delete(string key)
 
 Delete a configuration item.
 
@@ -57,12 +57,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **PutWithHttpInfo**
-> PutWithHttpInfo(string key, Object value)
+# **Put**
+> Put(string key, Object value)
 
 Create or update a configuration item.
 
@@ -76,6 +76,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

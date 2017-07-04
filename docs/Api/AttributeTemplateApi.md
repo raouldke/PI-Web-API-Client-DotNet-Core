@@ -11,8 +11,8 @@ Method | HTTP request | Description
 [**GetCategories**](AttributeTemplateApi.md#getcategories) | **GET** /attributetemplates/{webId}/categories | Get an attribute template's categories.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve an attribute template by path.
 
@@ -26,12 +26,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAttributeTemplate>
+[**PIAttributeTemplate**](../Model/PIAttributeTemplate.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve an attribute template.
 
@@ -45,12 +45,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAttributeTemplate>
+[**PIAttributeTemplate**](../Model/PIAttributeTemplate.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PIAttributeTemplate template)
+# **Update**
+> Update(string webId, PIAttributeTemplate template)
 
 Update an existing attribute template by replacing items in its definition.
 
@@ -64,12 +64,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete an attribute template.
 
@@ -82,12 +82,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAttributeTemplatesWithHttpInfo**
-> GetAttributeTemplatesWithHttpInfo(string webId, string selectedFields = null)
+# **GetAttributeTemplates**
+> GetAttributeTemplates(string webId, string selectedFields = null)
 
 Retrieve an attribute template's child attribute templates.
 
@@ -101,12 +101,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttributeTemplate>
+[**PIItemsAttributeTemplate**](../Model/PIItemsAttributeTemplate.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateAttributeTemplateWithHttpInfo**
-> CreateAttributeTemplateWithHttpInfo(string webId, PIAttributeTemplate template)
+# **CreateAttributeTemplate**
+> CreateAttributeTemplate(string webId, PIAttributeTemplate template)
 
 Create an attribute template as a child of another attribute template.
 
@@ -120,12 +120,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetCategoriesWithHttpInfo**
-> GetCategoriesWithHttpInfo(string webId, string selectedFields = null)
+# **GetCategories**
+> GetCategories(string webId, string selectedFields = null)
 
 Get an attribute template's categories.
 
@@ -139,6 +139,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttributeCategory>
+[**PIItemsAttributeCategory**](../Model/PIItemsAttributeCategory.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

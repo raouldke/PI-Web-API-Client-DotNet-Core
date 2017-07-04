@@ -32,8 +32,8 @@ Method | HTTP request | Description
 [**ExecuteSearchByAttribute**](EventFrameApi.md#executesearchbyattribute) | **GET** /eventframes/searchbyattribute/{searchId} | Execute a "Search EventFrames By Attribute Value" operation.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve an event frame by path.
 
@@ -47,12 +47,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIEventFrame>
+[**PIEventFrame**](../Model/PIEventFrame.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve an event frame.
 
@@ -66,12 +66,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIEventFrame>
+[**PIEventFrame**](../Model/PIEventFrame.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PIEventFrame eventFrame)
+# **Update**
+> Update(string webId, PIEventFrame eventFrame)
 
 Update an event frame by replacing items in its definition.
 
@@ -85,12 +85,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete an event frame.
 
@@ -103,12 +103,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **AcknowledgeWithHttpInfo**
-> AcknowledgeWithHttpInfo(string webId)
+# **Acknowledge**
+> Acknowledge(string webId)
 
 Calls the EventFrame's Acknowledge method.
 
@@ -121,12 +121,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAnnotationsWithHttpInfo**
-> GetAnnotationsWithHttpInfo(string webId, string selectedFields = null)
+# **GetAnnotations**
+> GetAnnotations(string webId, string selectedFields = null)
 
 Get an event frame's annotations.
 
@@ -140,12 +140,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAnnotation>
+[**PIItemsAnnotation**](../Model/PIItemsAnnotation.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateAnnotationWithHttpInfo**
-> CreateAnnotationWithHttpInfo(string webId, PIAnnotation annotation)
+# **CreateAnnotation**
+> CreateAnnotation(string webId, PIAnnotation annotation)
 
 Create an annotation on an event frame.
 
@@ -159,12 +159,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAnnotationByIdWithHttpInfo**
-> GetAnnotationByIdWithHttpInfo(string id, string webId, string selectedFields = null)
+# **GetAnnotationById**
+> GetAnnotationById(string id, string webId, string selectedFields = null)
 
 Get a specific annotation on an event frame.
 
@@ -179,12 +179,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAnnotation>
+[**PIAnnotation**](../Model/PIAnnotation.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateAnnotationWithHttpInfo**
-> UpdateAnnotationWithHttpInfo(string id, string webId, PIAnnotation annotation)
+# **UpdateAnnotation**
+> UpdateAnnotation(string id, string webId, PIAnnotation annotation)
 
 Update an annotation on an event frame by replacing items in its definition.
 
@@ -199,12 +199,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteAnnotationWithHttpInfo**
-> DeleteAnnotationWithHttpInfo(string id, string webId)
+# **DeleteAnnotation**
+> DeleteAnnotation(string id, string webId)
 
 Delete an annotation on an event frame.
 
@@ -218,12 +218,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAttributesWithHttpInfo**
-> GetAttributesWithHttpInfo(string webId, string categoryName = null, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string sortField = null, string sortOrder = null, int? startIndex = null, string templateName = null, string valueType = null)
+# **GetAttributes**
+> GetAttributes(string webId, string categoryName = null, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string sortField = null, string sortOrder = null, int? startIndex = null, string templateName = null, string valueType = null)
 
 Get the attributes of the specified event frame.
 
@@ -248,12 +248,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttribute>
+[**PIItemsAttribute**](../Model/PIItemsAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateAttributeWithHttpInfo**
-> CreateAttributeWithHttpInfo(string webId, PIAttribute attribute)
+# **CreateAttribute**
+> CreateAttribute(string webId, PIAttribute attribute)
 
 Create a new attribute of the specified event frame.
 
@@ -267,12 +267,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CaptureValuesWithHttpInfo**
-> CaptureValuesWithHttpInfo(string webId)
+# **CaptureValues**
+> CaptureValues(string webId)
 
 Calls the EventFrame's CaptureValues method.
 
@@ -285,12 +285,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetCategoriesWithHttpInfo**
-> GetCategoriesWithHttpInfo(string webId, string selectedFields = null)
+# **GetCategories**
+> GetCategories(string webId, string selectedFields = null)
 
 Get an event frame's categories.
 
@@ -304,12 +304,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsElementCategory>
+[**PIItemsElementCategory**](../Model/PIItemsElementCategory.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateConfigWithHttpInfo**
-> CreateConfigWithHttpInfo(string webId, bool? includeChildElements = null)
+# **CreateConfig**
+> CreateConfig(string webId, bool? includeChildElements = null)
 
 Executes the create configuration function of the data references found within the attributes of the event frame, and optionally, its children.
 
@@ -323,12 +323,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **FindEventFrameAttributesWithHttpInfo**
-> FindEventFrameAttributesWithHttpInfo(string webId, string attributeCategory = null, string attributeDescriptionFilter = null, string attributeNameFilter = null, string attributeType = null, string endTime = null, string eventFrameCategory = null, string eventFrameDescriptionFilter = null, string eventFrameNameFilter = null, string eventFrameTemplate = null, int? maxCount = null, string referencedElementNameFilter = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null)
+# **FindEventFrameAttributes**
+> FindEventFrameAttributes(string webId, string attributeCategory = null, string attributeDescriptionFilter = null, string attributeNameFilter = null, string attributeType = null, string endTime = null, string eventFrameCategory = null, string eventFrameDescriptionFilter = null, string eventFrameNameFilter = null, string eventFrameTemplate = null, int? maxCount = null, string referencedElementNameFilter = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null)
 
 Retrieves a list of event frame attributes matching the specified filters from the specified event frame.
 
@@ -359,12 +359,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttribute>
+[**PIItemsAttribute**](../Model/PIItemsAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetEventFramesWithHttpInfo**
-> GetEventFramesWithHttpInfo(string webId, bool? canBeAcknowledged = null, string categoryName = null, string endTime = null, bool? isAcknowledged = null, int? maxCount = null, string nameFilter = null, string referencedElementNameFilter = null, string referencedElementTemplateName = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, List<string> severity = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null, string templateName = null)
+# **GetEventFrames**
+> GetEventFrames(string webId, bool? canBeAcknowledged = null, string categoryName = null, string endTime = null, bool? isAcknowledged = null, int? maxCount = null, string nameFilter = null, string referencedElementNameFilter = null, string referencedElementTemplateName = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, List<string> severity = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null, string templateName = null)
 
 Retrieve event frames based on the specified conditions. By default, returns all children of the specified root event frame with a start time in the past 8 hours.
 
@@ -394,12 +394,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsEventFrame>
+[**PIItemsEventFrame**](../Model/PIItemsEventFrame.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateEventFrameWithHttpInfo**
-> CreateEventFrameWithHttpInfo(string webId, PIEventFrame eventFrame)
+# **CreateEventFrame**
+> CreateEventFrame(string webId, PIEventFrame eventFrame)
 
 Create an event frame as a child of the specified event frame.
 
@@ -413,12 +413,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetReferencedElementsWithHttpInfo**
-> GetReferencedElementsWithHttpInfo(string webId, string selectedFields = null)
+# **GetReferencedElements**
+> GetReferencedElements(string webId, string selectedFields = null)
 
 Retrieve the event frame's referenced elements.
 
@@ -432,12 +432,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsElement>
+[**PIItemsElement**](../Model/PIItemsElement.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityWithHttpInfo**
-> GetSecurityWithHttpInfo(string webId, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
+# **GetSecurity**
+> GetSecurity(string webId, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
 
 Get the security information of the specified security item associated with the event frame for a specified user.
 
@@ -453,12 +453,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityRights>
+[**PIItemsSecurityRights**](../Model/PIItemsSecurityRights.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntriesWithHttpInfo**
-> GetSecurityEntriesWithHttpInfo(string webId, string nameFilter = null, string selectedFields = null)
+# **GetSecurityEntries**
+> GetSecurityEntries(string webId, string nameFilter = null, string selectedFields = null)
 
 Retrieve the security entries associated with the event frame based on the specified criteria. By default, all security entries for this event frame are returned.
 
@@ -473,12 +473,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityEntry>
+[**PIItemsSecurityEntry**](../Model/PIItemsSecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateSecurityEntryWithHttpInfo**
-> CreateSecurityEntryWithHttpInfo(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
+# **CreateSecurityEntry**
+> CreateSecurityEntry(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
 
 Create a security entry owned by the event frame.
 
@@ -493,12 +493,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntryByNameWithHttpInfo**
-> GetSecurityEntryByNameWithHttpInfo(string name, string webId, string selectedFields = null)
+# **GetSecurityEntryByName**
+> GetSecurityEntryByName(string name, string webId, string selectedFields = null)
 
 Retrieve the security entry associated with the event frame with the specified name.
 
@@ -513,12 +513,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISecurityEntry>
+[**PISecurityEntry**](../Model/PISecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateSecurityEntryWithHttpInfo**
-> UpdateSecurityEntryWithHttpInfo(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
+# **UpdateSecurityEntry**
+> UpdateSecurityEntry(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
 
 Update a security entry owned by the event frame.
 
@@ -534,12 +534,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteSecurityEntryWithHttpInfo**
-> DeleteSecurityEntryWithHttpInfo(string name, string webId, bool? applyToChildren = null)
+# **DeleteSecurityEntry**
+> DeleteSecurityEntry(string name, string webId, bool? applyToChildren = null)
 
 Delete a security entry owned by the event frame.
 
@@ -554,12 +554,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetMultipleWithHttpInfo**
-> GetMultipleWithHttpInfo(bool? asParallel = null, string includeMode = null, List<string> path = null, string selectedFields = null, List<string> webId = null)
+# **GetMultiple**
+> GetMultiple(bool? asParallel = null, string includeMode = null, List<string> path = null, string selectedFields = null, List<string> webId = null)
 
 Retrieve multiple event frames by web ids or paths.
 
@@ -576,12 +576,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsItemEventFrame>
+[**PIItemsItemEventFrame**](../Model/PIItemsItemEventFrame.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateSearchByAttributeWithHttpInfo**
-> CreateSearchByAttributeWithHttpInfo(PISearchByAttributeEventFrame search)
+# **CreateSearchByAttribute**
+> CreateSearchByAttribute(PISearchByAttributeEventFrame search)
 
 Create a link for a "Search EventFrames By Attribute Value" operation, whose queries are specified in the request content. The SearchRoot is specified by the Web Id of the root EventFrame. If the SearchRoot is not specified, then the search starts at the Asset Database. ElementTemplate must be provided as the Web ID of the ElementTemplate, which are used to create the EventFrames. All the attributes in the queries must be defined as AttributeTemplates on the ElementTemplate. An array of attribute value queries are ANDed together to find the desired Element objects. At least one value query must be specified. There are limitations on SearchOperators.
 
@@ -594,12 +594,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **ExecuteSearchByAttributeWithHttpInfo**
-> ExecuteSearchByAttributeWithHttpInfo(string searchId, bool? canBeAcknowledged = null, string endTime = null, bool? isAcknowledged = null, int? maxCount = null, string nameFilter = null, string referencedElementNameFilter = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, List<string> severity = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null)
+# **ExecuteSearchByAttribute**
+> ExecuteSearchByAttribute(string searchId, bool? canBeAcknowledged = null, string endTime = null, bool? isAcknowledged = null, int? maxCount = null, string nameFilter = null, string referencedElementNameFilter = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, List<string> severity = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null)
 
 Execute a "Search EventFrames By Attribute Value" operation.
 
@@ -626,6 +626,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

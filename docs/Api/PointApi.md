@@ -12,8 +12,8 @@ Method | HTTP request | Description
 [**GetMultiple**](PointApi.md#getmultiple) | **GET** /points/multiple | Retrieve multiple points by web id or path.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Get a point by path.
 
@@ -27,12 +27,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIPoint>
+[**PIPoint**](../Model/PIPoint.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Get a point.
 
@@ -46,12 +46,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIPoint>
+[**PIPoint**](../Model/PIPoint.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PIPoint pointDTO)
+# **Update**
+> Update(string webId, PIPoint pointDTO)
 
 Update a point.
 
@@ -65,12 +65,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete a point.
 
@@ -83,12 +83,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAttributesWithHttpInfo**
-> GetAttributesWithHttpInfo(string webId, List<string> name = null, string nameFilter = null, string selectedFields = null)
+# **GetAttributes**
+> GetAttributes(string webId, List<string> name = null, string nameFilter = null, string selectedFields = null)
 
 Get point attributes.
 
@@ -104,12 +104,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsPointAttribute>
+[**PIItemsPointAttribute**](../Model/PIItemsPointAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAttributeByNameWithHttpInfo**
-> GetAttributeByNameWithHttpInfo(string name, string webId, string selectedFields = null)
+# **GetAttributeByName**
+> GetAttributeByName(string name, string webId, string selectedFields = null)
 
 Get a point attribute by name.
 
@@ -124,12 +124,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIPointAttribute>
+[**PIPointAttribute**](../Model/PIPointAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateAttributeValueWithHttpInfo**
-> UpdateAttributeValueWithHttpInfo(string webId, string name, Object value)
+# **UpdateAttributeValue**
+> UpdateAttributeValue(string webId, string name, Object value)
 
 Update a point attribute value.
 
@@ -144,12 +144,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetMultipleWithHttpInfo**
-> GetMultipleWithHttpInfo(bool? asParallel = null, string includeMode = null, List<string> path = null, string selectedFields = null, List<string> webId = null)
+# **GetMultiple**
+> GetMultiple(bool? asParallel = null, string includeMode = null, List<string> path = null, string selectedFields = null, List<string> webId = null)
 
 Retrieve multiple points by web id or path.
 
@@ -166,6 +166,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsItemPoint>
+[**PIItemsItemPoint**](../Model/PIItemsItemPoint.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

@@ -9,8 +9,8 @@ Method | HTTP request | Description
 [**Versions**](SystemApi.md#versions) | **GET** /system/versions | Get the current versions of the PI Web API instance and all external plugins.
 
 
-# **LandingWithHttpInfo**
-> LandingWithHttpInfo()
+# **Landing**
+> Landing()
 
 Get system links for this PI System Web API instance.
 
@@ -22,12 +22,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISystemLanding>
+[**PISystemLanding**](../Model/PISystemLanding.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CacheInstancesWithHttpInfo**
-> CacheInstancesWithHttpInfo()
+# **CacheInstances**
+> CacheInstances()
 
 Get AF cache instances currently in use by the system. These are caches from which user requests are serviced. The number of instances depends on the number of users connected to the service, the service's authentication method, and the cache instance configuration.
 
@@ -39,12 +39,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsCacheInstance>
+[**PIItemsCacheInstance**](../Model/PIItemsCacheInstance.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **StatusWithHttpInfo**
-> StatusWithHttpInfo()
+# **Status**
+> Status()
 
 Get the system uptime, the system state and the number of cache instances for this PI System Web API instance.
 
@@ -56,12 +56,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISystemStatus>
+[**PISystemStatus**](../Model/PISystemStatus.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UserInfoWithHttpInfo**
-> UserInfoWithHttpInfo()
+# **UserInfo**
+> UserInfo()
 
 Get information about the Windows identity used to fulfill the request. This depends on the service's authentication method and the credentials passed by the client. The impersonation level of the Windows identity is included.
 
@@ -73,12 +73,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIUserInfo>
+[**PIUserInfo**](../Model/PIUserInfo.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **VersionsWithHttpInfo**
-> VersionsWithHttpInfo()
+# **Versions**
+> Versions()
 
 Get the current versions of the PI Web API instance and all external plugins.
 
@@ -90,6 +90,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Dictionary<string, PIVersion>>
+Dictionary<string, PIVersion>
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

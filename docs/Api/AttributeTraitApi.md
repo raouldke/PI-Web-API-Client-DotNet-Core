@@ -6,8 +6,8 @@ Method | HTTP request | Description
 [**Get**](AttributeTraitApi.md#get) | **GET** /attributetraits/{name} | Retrieve an attribute trait.
 
 
-# **GetByCategoryWithHttpInfo**
-> GetByCategoryWithHttpInfo(List<string> category, string selectedFields = null)
+# **GetByCategory**
+> GetByCategory(List<string> category, string selectedFields = null)
 
 Retrieve all attribute traits of the specified category/categories.
 
@@ -21,12 +21,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttributeTrait>
+[**PIItemsAttributeTrait**](../Model/PIItemsAttributeTrait.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string name, string selectedFields = null)
+# **Get**
+> Get(string name, string selectedFields = null)
 
 Retrieve an attribute trait.
 
@@ -40,6 +40,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAttributeTrait>
+[**PIAttributeTrait**](../Model/PIAttributeTrait.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

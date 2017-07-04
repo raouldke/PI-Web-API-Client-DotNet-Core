@@ -15,8 +15,8 @@ Method | HTTP request | Description
 [**GetMultiple**](AttributeApi.md#getmultiple) | **GET** /attributes/multiple | Retrieve multiple attributes by web id or path.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve an attribute by path.
 
@@ -30,12 +30,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAttribute>
+[**PIAttribute**](../Model/PIAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve an attribute.
 
@@ -49,12 +49,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAttribute>
+[**PIAttribute**](../Model/PIAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PIAttribute attribute)
+# **Update**
+> Update(string webId, PIAttribute attribute)
 
 Update an attribute by replacing items in its definition.
 
@@ -68,12 +68,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete an attribute.
 
@@ -86,12 +86,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAttributesWithHttpInfo**
-> GetAttributesWithHttpInfo(string webId, string categoryName = null, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string sortField = null, string sortOrder = null, int? startIndex = null, string templateName = null, string valueType = null)
+# **GetAttributes**
+> GetAttributes(string webId, string categoryName = null, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, bool? showExcluded = null, bool? showHidden = null, string sortField = null, string sortOrder = null, int? startIndex = null, string templateName = null, string valueType = null)
 
 Get the child attributes of the specified attribute.
 
@@ -116,12 +116,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttribute>
+[**PIItemsAttribute**](../Model/PIItemsAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateAttributeWithHttpInfo**
-> CreateAttributeWithHttpInfo(string webId, PIAttribute attribute)
+# **CreateAttribute**
+> CreateAttribute(string webId, PIAttribute attribute)
 
 Create a new attribute as a child of the specified attribute.
 
@@ -135,12 +135,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetCategoriesWithHttpInfo**
-> GetCategoriesWithHttpInfo(string webId, string selectedFields = null)
+# **GetCategories**
+> GetCategories(string webId, string selectedFields = null)
 
 Get an attribute's categories.
 
@@ -154,12 +154,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttributeCategory>
+[**PIItemsAttributeCategory**](../Model/PIItemsAttributeCategory.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateConfigWithHttpInfo**
-> CreateConfigWithHttpInfo(string webId)
+# **CreateConfig**
+> CreateConfig(string webId)
 
 Create or update an attribute's DataReference configuration (Create/Update PI point for PI Point DataReference).
 
@@ -172,12 +172,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetValueWithHttpInfo**
-> GetValueWithHttpInfo(string webId, string selectedFields = null)
+# **GetValue**
+> GetValue(string webId, string selectedFields = null)
 
 Get the attribute's value. This call is intended for use with attributes that have no data reference only. For attributes with a data reference, consult the documentation for Streams.
 
@@ -191,12 +191,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITimedValue>
+[**PITimedValue**](../Model/PITimedValue.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **SetValueWithHttpInfo**
-> SetValueWithHttpInfo(string webId, PITimedValue value)
+# **SetValue**
+> SetValue(string webId, PITimedValue value)
 
 Set the value of a configuration item attribute. For attributes with a data reference or non-configuration item attributes, consult the documentation for streams.
 
@@ -210,12 +210,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetMultipleWithHttpInfo**
-> GetMultipleWithHttpInfo(bool? asParallel = null, string includeMode = null, List<string> path = null, string selectedFields = null, List<string> webId = null)
+# **GetMultiple**
+> GetMultiple(bool? asParallel = null, string includeMode = null, List<string> path = null, string selectedFields = null, List<string> webId = null)
 
 Retrieve multiple attributes by web id or path.
 
@@ -232,6 +232,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsItemAttribute>
+[**PIItemsItemAttribute**](../Model/PIItemsItemAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

@@ -42,8 +42,8 @@ Method | HTTP request | Description
 [**CreateTable**](AssetDatabaseApi.md#createtable) | **POST** /assetdatabases/{webId}/tables | Create a table on the Asset Database.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve an Asset Database by path.
 
@@ -57,12 +57,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAssetDatabase>
+[**PIAssetDatabase**](../Model/PIAssetDatabase.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve an Asset Database.
 
@@ -76,12 +76,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAssetDatabase>
+[**PIAssetDatabase**](../Model/PIAssetDatabase.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PIAssetDatabase database)
+# **Update**
+> Update(string webId, PIAssetDatabase database)
 
 Update an asset database by replacing items in its definition.
 
@@ -95,12 +95,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete an asset database.
 
@@ -113,12 +113,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **FindAnalysesWithHttpInfo**
-> FindAnalysesWithHttpInfo(string webId, List<string> field, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null)
+# **FindAnalyses**
+> FindAnalyses(string webId, List<string> field, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null)
 
 Retrieve analyses based on the specified conditions.
 
@@ -138,12 +138,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAnalysis>
+[**PIItemsAnalysis**](../Model/PIItemsAnalysis.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAnalysisCategoriesWithHttpInfo**
-> GetAnalysisCategoriesWithHttpInfo(string webId, string selectedFields = null)
+# **GetAnalysisCategories**
+> GetAnalysisCategories(string webId, string selectedFields = null)
 
 Retrieve analysis categories for a given Asset Database.
 
@@ -157,12 +157,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAnalysisCategory>
+[**PIItemsAnalysisCategory**](../Model/PIItemsAnalysisCategory.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateAnalysisCategoryWithHttpInfo**
-> CreateAnalysisCategoryWithHttpInfo(string webId, PIAnalysisCategory analysisCategory)
+# **CreateAnalysisCategory**
+> CreateAnalysisCategory(string webId, PIAnalysisCategory analysisCategory)
 
 Create an analysis category at the Asset Database root.
 
@@ -176,12 +176,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAnalysisTemplatesWithHttpInfo**
-> GetAnalysisTemplatesWithHttpInfo(string webId, List<string> field, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null)
+# **GetAnalysisTemplates**
+> GetAnalysisTemplates(string webId, List<string> field, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null)
 
 Retrieve analysis templates based on the specified criteria. By default, all analysis templates in the specified Asset Database are returned.
 
@@ -200,12 +200,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAnalysisTemplate>
+[**PIItemsAnalysisTemplate**](../Model/PIItemsAnalysisTemplate.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateAnalysisTemplateWithHttpInfo**
-> CreateAnalysisTemplateWithHttpInfo(string webId, PIAnalysisTemplate template)
+# **CreateAnalysisTemplate**
+> CreateAnalysisTemplate(string webId, PIAnalysisTemplate template)
 
 Create an analysis template at the Asset Database root.
 
@@ -219,12 +219,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAttributeCategoriesWithHttpInfo**
-> GetAttributeCategoriesWithHttpInfo(string webId, string selectedFields = null)
+# **GetAttributeCategories**
+> GetAttributeCategories(string webId, string selectedFields = null)
 
 Retrieve attribute categories for a given Asset Database.
 
@@ -238,12 +238,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttributeCategory>
+[**PIItemsAttributeCategory**](../Model/PIItemsAttributeCategory.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateAttributeCategoryWithHttpInfo**
-> CreateAttributeCategoryWithHttpInfo(string webId, PIAttributeCategory attributeCategory)
+# **CreateAttributeCategory**
+> CreateAttributeCategory(string webId, PIAttributeCategory attributeCategory)
 
 Create an attribute category at the Asset Database root.
 
@@ -257,12 +257,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **FindElementAttributesWithHttpInfo**
-> FindElementAttributesWithHttpInfo(string webId, string attributeCategory = null, string attributeDescriptionFilter = null, string attributeNameFilter = null, string attributeType = null, string elementCategory = null, string elementDescriptionFilter = null, string elementNameFilter = null, string elementTemplate = null, string elementType = null, int? maxCount = null, bool? searchFullHierarchy = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null)
+# **FindElementAttributes**
+> FindElementAttributes(string webId, string attributeCategory = null, string attributeDescriptionFilter = null, string attributeNameFilter = null, string attributeType = null, string elementCategory = null, string elementDescriptionFilter = null, string elementNameFilter = null, string elementTemplate = null, string elementType = null, int? maxCount = null, bool? searchFullHierarchy = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null)
 
 Retrieves a list of element attributes matching the specified filters from the specified asset database.
 
@@ -290,12 +290,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttribute>
+[**PIItemsAttribute**](../Model/PIItemsAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetElementCategoriesWithHttpInfo**
-> GetElementCategoriesWithHttpInfo(string webId, string selectedFields = null)
+# **GetElementCategories**
+> GetElementCategories(string webId, string selectedFields = null)
 
 Retrieve element categories for a given Asset Database.
 
@@ -309,12 +309,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsElementCategory>
+[**PIItemsElementCategory**](../Model/PIItemsElementCategory.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateElementCategoryWithHttpInfo**
-> CreateElementCategoryWithHttpInfo(string webId, PIElementCategory elementCategory)
+# **CreateElementCategory**
+> CreateElementCategory(string webId, PIElementCategory elementCategory)
 
 Create an element category at the Asset Database root.
 
@@ -328,12 +328,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetElementsWithHttpInfo**
-> GetElementsWithHttpInfo(string webId, string categoryName = null, string descriptionFilter = null, string elementType = null, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null, string templateName = null)
+# **GetElements**
+> GetElements(string webId, string categoryName = null, string descriptionFilter = null, string elementType = null, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null, string templateName = null)
 
 Retrieve elements based on the specified conditions. By default, this method selects immediate children of the specified asset database.
 
@@ -357,12 +357,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsElement>
+[**PIItemsElement**](../Model/PIItemsElement.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateElementWithHttpInfo**
-> CreateElementWithHttpInfo(string webId, PIElement element)
+# **CreateElement**
+> CreateElement(string webId, PIElement element)
 
 Create a child element.
 
@@ -376,12 +376,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetElementTemplatesWithHttpInfo**
-> GetElementTemplatesWithHttpInfo(string webId, List<string> field, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null)
+# **GetElementTemplates**
+> GetElementTemplates(string webId, List<string> field, int? maxCount = null, string query = null, string selectedFields = null, string sortField = null, string sortOrder = null)
 
 Retrieve element templates based on the specified criteria. Only templates of instance type "Element" and "EventFrame" are returned. By default, all element and event frame templates in the specified Asset Database are returned.
 
@@ -400,12 +400,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsElementTemplate>
+[**PIItemsElementTemplate**](../Model/PIItemsElementTemplate.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateElementTemplateWithHttpInfo**
-> CreateElementTemplateWithHttpInfo(string webId, PIElementTemplate template)
+# **CreateElementTemplate**
+> CreateElementTemplate(string webId, PIElementTemplate template)
 
 Create a template at the Asset Database root. Specify InstanceType of "Element" or "EventFrame" to create element or event frame template respectively. Only these two types of templates can be created.
 
@@ -419,12 +419,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetEnumerationSetsWithHttpInfo**
-> GetEnumerationSetsWithHttpInfo(string webId, string selectedFields = null)
+# **GetEnumerationSets**
+> GetEnumerationSets(string webId, string selectedFields = null)
 
 Retrieve enumeration sets for given asset database.
 
@@ -438,12 +438,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsEnumerationSet>
+[**PIItemsEnumerationSet**](../Model/PIItemsEnumerationSet.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateEnumerationSetWithHttpInfo**
-> CreateEnumerationSetWithHttpInfo(string webId, PIEnumerationSet enumerationSet)
+# **CreateEnumerationSet**
+> CreateEnumerationSet(string webId, PIEnumerationSet enumerationSet)
 
 Create an enumeration set at the Asset Database.
 
@@ -457,12 +457,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **FindEventFrameAttributesWithHttpInfo**
-> FindEventFrameAttributesWithHttpInfo(string webId, string attributeCategory = null, string attributeDescriptionFilter = null, string attributeNameFilter = null, string attributeType = null, string endTime = null, string eventFrameCategory = null, string eventFrameDescriptionFilter = null, string eventFrameNameFilter = null, string eventFrameTemplate = null, int? maxCount = null, string referencedElementNameFilter = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null)
+# **FindEventFrameAttributes**
+> FindEventFrameAttributes(string webId, string attributeCategory = null, string attributeDescriptionFilter = null, string attributeNameFilter = null, string attributeType = null, string endTime = null, string eventFrameCategory = null, string eventFrameDescriptionFilter = null, string eventFrameNameFilter = null, string eventFrameTemplate = null, int? maxCount = null, string referencedElementNameFilter = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null)
 
 Retrieves a list of event frame attributes matching the specified filters from the specified asset database.
 
@@ -493,12 +493,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAttribute>
+[**PIItemsAttribute**](../Model/PIItemsAttribute.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetEventFramesWithHttpInfo**
-> GetEventFramesWithHttpInfo(string webId, bool? canBeAcknowledged = null, string categoryName = null, string endTime = null, bool? isAcknowledged = null, int? maxCount = null, string nameFilter = null, string referencedElementNameFilter = null, string referencedElementTemplateName = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, List<string> severity = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null, string templateName = null)
+# **GetEventFrames**
+> GetEventFrames(string webId, bool? canBeAcknowledged = null, string categoryName = null, string endTime = null, bool? isAcknowledged = null, int? maxCount = null, string nameFilter = null, string referencedElementNameFilter = null, string referencedElementTemplateName = null, bool? searchFullHierarchy = null, string searchMode = null, string selectedFields = null, List<string> severity = null, string sortField = null, string sortOrder = null, int? startIndex = null, string startTime = null, string templateName = null)
 
 Retrieve event frames based on the specified conditions. By default, returns all children of the specified root resource with a start time in the past 8 hours.
 
@@ -528,12 +528,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsEventFrame>
+[**PIItemsEventFrame**](../Model/PIItemsEventFrame.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateEventFrameWithHttpInfo**
-> CreateEventFrameWithHttpInfo(string webId, PIEventFrame eventFrame)
+# **CreateEventFrame**
+> CreateEventFrame(string webId, PIEventFrame eventFrame)
 
 Create an event frame.
 
@@ -547,12 +547,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **ExportWithHttpInfo**
-> ExportWithHttpInfo(string webId, string endTime = null, List<string> exportMode = null, string startTime = null)
+# **Export**
+> Export(string webId, string endTime = null, List<string> exportMode = null, string startTime = null)
 
 Export the asset database.
 
@@ -568,12 +568,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **ImportWithHttpInfo**
-> ImportWithHttpInfo(string webId, List<string> importMode = null)
+# **Import**
+> Import(string webId, List<string> importMode = null)
 
 Import an asset database.
 
@@ -587,12 +587,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetReferencedElementsWithHttpInfo**
-> GetReferencedElementsWithHttpInfo(string webId, string categoryName = null, string descriptionFilter = null, string elementType = null, int? maxCount = null, string nameFilter = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null, string templateName = null)
+# **GetReferencedElements**
+> GetReferencedElements(string webId, string categoryName = null, string descriptionFilter = null, string elementType = null, int? maxCount = null, string nameFilter = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null, string templateName = null)
 
 Retrieve referenced elements based on the specified conditions. By default, this method selects all referenced elements at the root level of the asset database.
 
@@ -615,12 +615,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsElement>
+[**PIItemsElement**](../Model/PIItemsElement.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **AddReferencedElementWithHttpInfo**
-> AddReferencedElementWithHttpInfo(string webId, List<string> referencedElementWebId, string referenceType = null)
+# **AddReferencedElement**
+> AddReferencedElement(string webId, List<string> referencedElementWebId, string referenceType = null)
 
 Add a reference to an existing element to the specified database.
 
@@ -635,12 +635,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **RemoveReferencedElementWithHttpInfo**
-> RemoveReferencedElementWithHttpInfo(string webId, List<string> referencedElementWebId)
+# **RemoveReferencedElement**
+> RemoveReferencedElement(string webId, List<string> referencedElementWebId)
 
 Remove a reference to an existing element from the specified database.
 
@@ -654,12 +654,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityWithHttpInfo**
-> GetSecurityWithHttpInfo(string webId, List<string> securityItem, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
+# **GetSecurity**
+> GetSecurity(string webId, List<string> securityItem, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
 
 Get the security information of the specified security item associated with the asset database for a specified user.
 
@@ -676,12 +676,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityRights>
+[**PIItemsSecurityRights**](../Model/PIItemsSecurityRights.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntriesWithHttpInfo**
-> GetSecurityEntriesWithHttpInfo(string webId, string nameFilter = null, string securityItem = null, string selectedFields = null)
+# **GetSecurityEntries**
+> GetSecurityEntries(string webId, string nameFilter = null, string securityItem = null, string selectedFields = null)
 
 Retrieve the security entries of the specified security item associated with the asset database based on the specified criteria. By default, all security entries for this asset database are returned.
 
@@ -697,12 +697,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityEntry>
+[**PIItemsSecurityEntry**](../Model/PIItemsSecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateSecurityEntryWithHttpInfo**
-> CreateSecurityEntryWithHttpInfo(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null, string securityItem = null)
+# **CreateSecurityEntry**
+> CreateSecurityEntry(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null, string securityItem = null)
 
 Create a security entry owned by the asset database.
 
@@ -718,12 +718,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntryByNameWithHttpInfo**
-> GetSecurityEntryByNameWithHttpInfo(string name, string webId, string securityItem = null, string selectedFields = null)
+# **GetSecurityEntryByName**
+> GetSecurityEntryByName(string name, string webId, string securityItem = null, string selectedFields = null)
 
 Retrieve the security entry of the specified security item associated with the asset database with the specified name.
 
@@ -739,12 +739,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISecurityEntry>
+[**PISecurityEntry**](../Model/PISecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateSecurityEntryWithHttpInfo**
-> UpdateSecurityEntryWithHttpInfo(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null, string securityItem = null)
+# **UpdateSecurityEntry**
+> UpdateSecurityEntry(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null, string securityItem = null)
 
 Update a security entry owned by the asset database.
 
@@ -761,12 +761,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteSecurityEntryWithHttpInfo**
-> DeleteSecurityEntryWithHttpInfo(string name, string webId, bool? applyToChildren = null, string securityItem = null)
+# **DeleteSecurityEntry**
+> DeleteSecurityEntry(string name, string webId, bool? applyToChildren = null, string securityItem = null)
 
 Delete a security entry owned by the asset database.
 
@@ -782,12 +782,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetTableCategoriesWithHttpInfo**
-> GetTableCategoriesWithHttpInfo(string webId, string selectedFields = null)
+# **GetTableCategories**
+> GetTableCategories(string webId, string selectedFields = null)
 
 Retrieve table categories for a given Asset Database.
 
@@ -801,12 +801,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsTableCategory>
+[**PIItemsTableCategory**](../Model/PIItemsTableCategory.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateTableCategoryWithHttpInfo**
-> CreateTableCategoryWithHttpInfo(string webId, PITableCategory tableCategory)
+# **CreateTableCategory**
+> CreateTableCategory(string webId, PITableCategory tableCategory)
 
 Create a table category on the Asset Database.
 
@@ -820,12 +820,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetTablesWithHttpInfo**
-> GetTablesWithHttpInfo(string webId, string selectedFields = null)
+# **GetTables**
+> GetTables(string webId, string selectedFields = null)
 
 Retrieve tables for given Asset Database.
 
@@ -839,12 +839,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsTable>
+[**PIItemsTable**](../Model/PIItemsTable.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateTableWithHttpInfo**
-> CreateTableWithHttpInfo(string webId, PITable table)
+# **CreateTable**
+> CreateTable(string webId, PITable table)
 
 Create a table on the Asset Database.
 
@@ -858,6 +858,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

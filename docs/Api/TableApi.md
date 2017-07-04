@@ -17,8 +17,8 @@ Method | HTTP request | Description
 [**DeleteSecurityEntry**](TableApi.md#deletesecurityentry) | **DELETE** /tables/{webId}/securityentries/{name} | Delete a security entry owned by the table.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve a table by path.
 
@@ -32,12 +32,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITable>
+[**PITable**](../Model/PITable.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve a table.
 
@@ -51,12 +51,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITable>
+[**PITable**](../Model/PITable.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PITable table)
+# **Update**
+> Update(string webId, PITable table)
 
 Update a table by replacing items in its definition.
 
@@ -70,12 +70,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete a table.
 
@@ -88,12 +88,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetCategoriesWithHttpInfo**
-> GetCategoriesWithHttpInfo(string webId, string selectedFields = null)
+# **GetCategories**
+> GetCategories(string webId, string selectedFields = null)
 
 Get a table's categories.
 
@@ -107,12 +107,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsTableCategory>
+[**PIItemsTableCategory**](../Model/PIItemsTableCategory.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetDataWithHttpInfo**
-> GetDataWithHttpInfo(string webId, string selectedFields = null)
+# **GetData**
+> GetData(string webId, string selectedFields = null)
 
 Get the table's data.
 
@@ -126,12 +126,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PITableData>
+[**PITableData**](../Model/PITableData.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateDataWithHttpInfo**
-> UpdateDataWithHttpInfo(string webId, PITableData data)
+# **UpdateData**
+> UpdateData(string webId, PITableData data)
 
 Update the table's data.
 
@@ -145,12 +145,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityWithHttpInfo**
-> GetSecurityWithHttpInfo(string webId, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
+# **GetSecurity**
+> GetSecurity(string webId, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
 
 Get the security information of the specified security item associated with the table for a specified user.
 
@@ -166,12 +166,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityRights>
+[**PIItemsSecurityRights**](../Model/PIItemsSecurityRights.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntriesWithHttpInfo**
-> GetSecurityEntriesWithHttpInfo(string webId, string nameFilter = null, string selectedFields = null)
+# **GetSecurityEntries**
+> GetSecurityEntries(string webId, string nameFilter = null, string selectedFields = null)
 
 Retrieve the security entries associated with the table based on the specified criteria. By default, all security entries for this table are returned.
 
@@ -186,12 +186,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsSecurityEntry>
+[**PIItemsSecurityEntry**](../Model/PIItemsSecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateSecurityEntryWithHttpInfo**
-> CreateSecurityEntryWithHttpInfo(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
+# **CreateSecurityEntry**
+> CreateSecurityEntry(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
 
 Create a security entry owned by the table.
 
@@ -206,12 +206,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetSecurityEntryByNameWithHttpInfo**
-> GetSecurityEntryByNameWithHttpInfo(string name, string webId, string selectedFields = null)
+# **GetSecurityEntryByName**
+> GetSecurityEntryByName(string name, string webId, string selectedFields = null)
 
 Retrieve the security entry associated with the table with the specified name.
 
@@ -226,12 +226,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PISecurityEntry>
+[**PISecurityEntry**](../Model/PISecurityEntry.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateSecurityEntryWithHttpInfo**
-> UpdateSecurityEntryWithHttpInfo(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
+# **UpdateSecurityEntry**
+> UpdateSecurityEntry(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
 
 Update a security entry owned by the table.
 
@@ -247,12 +247,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteSecurityEntryWithHttpInfo**
-> DeleteSecurityEntryWithHttpInfo(string name, string webId, bool? applyToChildren = null)
+# **DeleteSecurityEntry**
+> DeleteSecurityEntry(string name, string webId, bool? applyToChildren = null)
 
 Delete a security entry owned by the table.
 
@@ -267,6 +267,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

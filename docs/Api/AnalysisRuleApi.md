@@ -10,8 +10,8 @@ Method | HTTP request | Description
 [**CreateAnalysisRule**](AnalysisRuleApi.md#createanalysisrule) | **POST** /analysisrules/{webId}/analysisrules | Create a new Analysis Rule as a child of an existing Analysis Rule.
 
 
-# **GetByPathWithHttpInfo**
-> GetByPathWithHttpInfo(string path, string selectedFields = null)
+# **GetByPath**
+> GetByPath(string path, string selectedFields = null)
 
 Retrieve an Analysis Rule by path.
 
@@ -25,12 +25,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAnalysisRule>
+[**PIAnalysisRule**](../Model/PIAnalysisRule.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetWithHttpInfo**
-> GetWithHttpInfo(string webId, string selectedFields = null)
+# **Get**
+> Get(string webId, string selectedFields = null)
 
 Retrieve an Analysis Rule.
 
@@ -44,12 +44,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIAnalysisRule>
+[**PIAnalysisRule**](../Model/PIAnalysisRule.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **UpdateWithHttpInfo**
-> UpdateWithHttpInfo(string webId, PIAnalysisRule analysisRule)
+# **Update**
+> Update(string webId, PIAnalysisRule analysisRule)
 
 Update an Analysis Rule by replacing items in its definition.
 
@@ -63,12 +63,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **DeleteWithHttpInfo**
-> DeleteWithHttpInfo(string webId)
+# **Delete**
+> Delete(string webId)
 
 Delete an Analysis Rule.
 
@@ -81,12 +81,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **GetAnalysisRulesWithHttpInfo**
-> GetAnalysisRulesWithHttpInfo(string webId, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null)
+# **GetAnalysisRules**
+> GetAnalysisRules(string webId, int? maxCount = null, string nameFilter = null, bool? searchFullHierarchy = null, string selectedFields = null, string sortField = null, string sortOrder = null, int? startIndex = null)
 
 Get the child Analysis Rules of the Analysis Rule.
 
@@ -106,12 +106,12 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<PIItemsAnalysisRule>
+[**PIItemsAnalysisRule**](../Model/PIItemsAnalysisRule.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **CreateAnalysisRuleWithHttpInfo**
-> CreateAnalysisRuleWithHttpInfo(string webId, PIAnalysisRule analysisRule)
+# **CreateAnalysisRule**
+> CreateAnalysisRule(string webId, PIAnalysisRule analysisRule)
 
 Create a new Analysis Rule as a child of an existing Analysis Rule.
 
@@ -125,6 +125,6 @@ Name | Type | Description | Notes
 
 ### Return type
 
-ApiResponse<Object>
+[**Object**](../Model/Object.md)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
