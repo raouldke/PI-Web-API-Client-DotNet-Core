@@ -35,7 +35,7 @@ Name | Type | Description | Notes
 
 [**PIElementTemplate**](../Model/PIElementTemplate.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **Get**
 > Get(string webId, string selectedFields = null)
@@ -54,7 +54,7 @@ Name | Type | Description | Notes
 
 [**PIElementTemplate**](../Model/PIElementTemplate.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **Update**
 > Update(string webId, PIElementTemplate template)
@@ -73,7 +73,7 @@ Name | Type | Description | Notes
 
 [**Object**](../Model/Object.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **Delete**
 > Delete(string webId)
@@ -91,7 +91,7 @@ Name | Type | Description | Notes
 
 [**Object**](../Model/Object.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **GetAnalysisTemplates**
 > GetAnalysisTemplates(string webId, string selectedFields = null)
@@ -110,7 +110,7 @@ Name | Type | Description | Notes
 
 [**PIItemsAnalysisTemplate**](../Model/PIItemsAnalysisTemplate.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **GetAttributeTemplates**
 > GetAttributeTemplates(string webId, string selectedFields = null, bool? showInherited = null)
@@ -130,7 +130,7 @@ Name | Type | Description | Notes
 
 [**PIItemsAttributeTemplate**](../Model/PIItemsAttributeTemplate.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **CreateAttributeTemplate**
 > CreateAttributeTemplate(string webId, PIAttributeTemplate template)
@@ -149,7 +149,7 @@ Name | Type | Description | Notes
 
 [**Object**](../Model/Object.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **GetCategories**
 > GetCategories(string webId, string selectedFields = null, bool? showInherited = null)
@@ -169,7 +169,7 @@ Name | Type | Description | Notes
 
 [**PIItemsElementCategory**](../Model/PIItemsElementCategory.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **GetSecurity**
 > GetSecurity(string webId, List<string> userIdentity, bool? forceRefresh = null, string selectedFields = null)
@@ -190,7 +190,7 @@ Name | Type | Description | Notes
 
 [**PIItemsSecurityRights**](../Model/PIItemsSecurityRights.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **GetSecurityEntries**
 > GetSecurityEntries(string webId, string nameFilter = null, string selectedFields = null)
@@ -210,7 +210,7 @@ Name | Type | Description | Notes
 
 [**PIItemsSecurityEntry**](../Model/PIItemsSecurityEntry.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **CreateSecurityEntry**
 > CreateSecurityEntry(string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
@@ -230,7 +230,7 @@ Name | Type | Description | Notes
 
 [**Object**](../Model/Object.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **GetSecurityEntryByName**
 > GetSecurityEntryByName(string name, string webId, string selectedFields = null)
@@ -250,7 +250,7 @@ Name | Type | Description | Notes
 
 [**PIItemsSecurityEntry**](../Model/PIItemsSecurityEntry.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **UpdateSecurityEntry**
 > UpdateSecurityEntry(string name, string webId, PISecurityEntry securityEntry, bool? applyToChildren = null)
@@ -271,7 +271,7 @@ Name | Type | Description | Notes
 
 [**Object**](../Model/Object.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **DeleteSecurityEntry**
 > DeleteSecurityEntry(string name, string webId, bool? applyToChildren = null)
@@ -291,4 +291,4 @@ Name | Type | Description | Notes
 
 [**Object**](../Model/Object.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)

@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 
 [**PIEnumerationValue**](../Model/PIEnumerationValue.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **Get**
 > Get(string webId, string selectedFields = null)
@@ -44,7 +44,7 @@ Name | Type | Description | Notes
 
 [**PIEnumerationValue**](../Model/PIEnumerationValue.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **UpdateEnumerationValue**
 > UpdateEnumerationValue(string webId, PIEnumerationValue enumerationValue)
@@ -63,7 +63,7 @@ Name | Type | Description | Notes
 
 [**Object**](../Model/Object.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
 
 # **DeleteEnumerationValue**
 > DeleteEnumerationValue(string webId)
@@ -81,4 +81,4 @@ Name | Type | Description | Notes
 
 [**Object**](../Model/Object.md)
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../DOCUMENTATION.md#documentation-for-api-endpoints) [[Back to Model list]](../../DOCUMENTATION.md#documentation-for-models) [[Back to DOCUMENTATION]](../../DOCUMENTATION.md)
