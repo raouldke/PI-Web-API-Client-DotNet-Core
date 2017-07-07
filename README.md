@@ -10,6 +10,20 @@ This repository has the source code package of the PI Web API Client libraries f
  - PI Web API 2017 installed within your domain using Kerberos or Basic Authentication.
  - .NET Core 1.1
 
+ 
+ ## Installation
+
+ - Download this source code
+ - Create a new folder under %PIHOME% named WebAPIClient, if it doesn't exist.
+ - Create a new folder under WebAPIClient named DotNetCore, if it doesn't exist.
+ - Copy the unique file from the dist folder to %PIHOME%\WebAPIClient\DotNetCore.
+
+ 
+## Usage
+
+Create a new .NET Core project (Console Application for instance). Open the Package Manager Console and run "Install-Package OSIsoft.PIDevClub.PIWebApiClient -Source %PIHOME%\WebAPIClient\DotNetCore" to add this library to your .NET Core project.
+
+
 ## Documentation
 
 All classes and methods are described on the [DOCUMENTATION.md](DOCUMENTATION.md).
