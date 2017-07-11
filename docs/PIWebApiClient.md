@@ -9,8 +9,8 @@ Creates an intance of the PI Web API client top level object.
 
 Name | Type | Description | Notes
 ------------- | ------------- | ------------- | -------------
-**baseUrl * * | **string **| PI Web API base service url. | [required]
-**useKerberos** | **bool **| Select true for Kerberos authentication and false for Basic authentication. The default value is true. | [required]
+**baseUrl** | **string**| PI Web API base service url. | [required]
+**useKerberos** | **bool**| Select true for Kerberos authentication and false for Basic authentication. The default value is true. | [required]
 **username** | **string**| The username in case basic authentication was selected to authenticate against PI Web API.This parameter won't be used in case Kerberos authentication is used. | [optional]
 **password** | **string**| The password in case basic authentication was selected to authenticate against PI Web API.This parameter won't be used in case Kerberos authentication is used. | [optional]
 
