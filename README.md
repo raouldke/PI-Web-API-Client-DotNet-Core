@@ -86,7 +86,7 @@ If you want to use basic authentication instead of Kerberos, set useKerberos to 
 ### Get recorded values in bulk using the StreamSet/GetRecordedAdHoc
 
 ```cs
-    List<string> webIds = new List<string>() { point1.WebId, point1.WebId, point1.WebId };
+    List<string> webIds = new List<string>() { point1.WebId, point2.WebId, point3.WebId };
     PIItemsStreamValues piItemsStreamValues = client.StreamSet.GetRecordedAdHoc(webIds, startTime: "*-3d", endTime: "*");
 ```
 
