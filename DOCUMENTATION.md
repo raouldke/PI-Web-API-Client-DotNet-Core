@@ -1,3 +1,7 @@
+## Documentation for PI Web API top level object
+
+- [PIWebApiClient](docs/PIWebApiClient.md)
+
 ## Documentation for API Endpoints
 
 Class | Method | HTTP request | Description

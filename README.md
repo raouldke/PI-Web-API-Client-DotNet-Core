@@ -2,8 +2,15 @@ PI Web API Client libraries for .NET Core
 ===
 
 
-## Organization
+## Overview
 This repository has the source code package of the PI Web API Client libraries for .NET Core.
+
+.NET Core is a cross-platform, open source, and modular .NET platform for creating modern web apps, microservices, libraries and console applications. Click [here](https://blogs.msdn.microsoft.com/dotnet/2016/06/27/announcing-net-core-1-0/) to read the official announcement.
+
+Nevertheless, PI AF SDK is not compatible with .NET Core yet. Therefore, this library will help our community develop modern apps on top of the PI System developed on .NET Core.
+
+We have tested it on Windows, but it should work on Linux and OS X as well.
+
 
 ## Requirements
 
@@ -11,7 +18,7 @@ This repository has the source code package of the PI Web API Client libraries f
  - .NET Core 1.1
 
  
- ## Installation
+## Installation
 
  - Download this source code
  - Create a new folder under %PIHOME% named WebAPIClient, if it doesn't exist.
@@ -23,21 +30,29 @@ This repository has the source code package of the PI Web API Client libraries f
 
 Create a new .NET Core project (Console Application for instance). Open the Package Manager Console and run "Install-Package OSIsoft.PIDevClub.PIWebApiClient -Source %PIHOME%\WebAPIClient\DotNetCore" to add this library to your .NET Core project.
 
-
 ## Documentation
 
-All classes and methods are described on the [DOCUMENTATION.md](DOCUMENTATION.md).
+All classes and methods are described on the [DOCUMENTATION](DOCUMENTATION.md).
 
+## Feedback 
+
+Plese provide feedback by commenting the related [PI Developer Club blog post](https://pisquare.osisoft.com/community/developers-club/blog/2017/07/10/announcing-pi-web-api-wrapper-for-vba).
 
 ## Examples
 
 Please check the [Program.cs](/src/OSIsoft.PIDevClub.PIWebApiClient/LibraryTest/Program.cs) from the LibraryTest project from the Visual Studio solution of this repository. Below there are also code snippets written in C# for you to get started using this library:
 
 
-### Create an instance of the PI Web API top level object.
+### Create an instance of the PI Web API top level object using Kerberos authentication.
 
 ```cs
 	PIWebApiClient client = new PIWebApiClient("https://marc-web-sql.marc.net/piwebapi", true);  
+``` 
+
+### Create an instance of the PI Web API top level object using Basic authentication.
+
+```cs
+	PIWebApiClient client = new PIWebApiClient("https://marc-web-sql.marc.net/piwebapi", false, username, password);  
 ``` 
 
 If you want to use basic authentication instead of Kerberos, set useKerberos to false and set the username and password accordingly.
