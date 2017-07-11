@@ -3,7 +3,7 @@
 ## **Constructor**
 > PIWebApiClient(string baseUrl, bool useKerberos = true, string username = null, string password = null)
 
-Creates an intance of the PI Web API client top level object.
+Creates an instance of the PI Web API client top level object.
 
 ### Parameters
 
